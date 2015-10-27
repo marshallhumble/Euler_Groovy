@@ -1,15 +1,10 @@
 #!/usr/bin/env python
 
-import sys
+from sys import byteorder
+
 
 def check_endian():
-    system_type = sys.byteorder
-    if system_type == 'little':
-        print('LittleEndian')
-    elif system_type == 'big':
-        print('BigEndian')
-    else:
-        sys.exit('Unable to determine')
+    print({'big': 'BigEndian', 'little': 'LittleEndian'}.get(byteorder))
 
 
 if __name__ == '__main__':
