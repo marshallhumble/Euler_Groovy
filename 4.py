@@ -1,5 +1,9 @@
 #!/usr/bin/env python
 
+import time
+start = time.time()
+
+
 """
 Largest palindrome product
 
@@ -20,5 +24,8 @@ for num in range(111,999):
             results.append(c)
 
 print(max(results))
+
+elapsed = (time.time() - start)
+print("This code took: " + str(elapsed) + " seconds")
 
 

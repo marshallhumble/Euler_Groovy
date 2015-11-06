@@ -1,5 +1,9 @@
 #!/usr/bin/env python
 
+import time
+start = time.time()
+
+
 """
 Sum square difference
 Problem 6
@@ -21,3 +25,7 @@ def square_of_sum(n):
     return sum(range(1, n+1)) ** 2
 
 print(square_of_sum(100) - sum_of_squares(100))
+
+
+elapsed = (time.time() - start)
+print("This code took: " + str(elapsed) + " seconds")

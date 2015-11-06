@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 
 from math import sqrt
+import time
+start = time.time()
+
 
 """
 10001st prime
@@ -37,3 +40,6 @@ def counter():
 
 if __name__ == '__main__':
     counter()
+
+    elapsed = (time.time() - start)
+    print("This code took: " + str(elapsed) + " seconds")

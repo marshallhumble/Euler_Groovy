@@ -1,5 +1,9 @@
 # /usr/bin/env python
 
+import time
+start = time.time()
+
+
 """
 Smallest multiple
 
@@ -26,3 +30,6 @@ if __name__ == '__main__':
         print("No answer found")
     else:
         print("found an answer:", solution)
+
+elapsed = (time.time() - start)
+print("This code took: " + str(elapsed) + " seconds")

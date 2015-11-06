@@ -1,5 +1,9 @@
 #!/usr/bin/env python
 
+import time
+start = time.time()
+
+
 """
 The prime factors of 13195 are 5, 7, 13 and 29.
 
@@ -16,3 +20,6 @@ def largest_prime(n):
     return n
 
 print(int(largest_prime(600851475143)))
+
+elapsed = (time.time() - start)
+print("This code took: " + str(elapsed) + " seconds")
