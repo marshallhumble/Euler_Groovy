@@ -35,5 +35,5 @@ def counter():
         count_token += 1
     print("The 10001'st Prime number is: ", prime)
 
-
-counter()
+if __name__ == '__main__':
+    counter()
