@@ -1,6 +1,8 @@
-'''
+#!/usr/bin/env python
+
+"""
 Find the greatest product of five consecutive digits in the 1000-digit number
-'''
+"""
 
 import time
 start = time.time()
