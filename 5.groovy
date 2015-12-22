@@ -21,12 +21,12 @@ divisor = (2..19)
 canidate = 20
 
 while (divisor.find({ divisor -> canidate % divisor != 0 })) { canidate += 20 } //add by 20 to reduce the execution time
-println canidate
+println(canidate)
 
 def duration = benchmark {
 	(0..10000).inject(0) { sum, item ->
 		sum + item
 	}
 }
-println "execution took ${duration} ms"
+println("execution took ${duration} ms")
 
