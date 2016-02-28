@@ -11,7 +11,7 @@ import sys
 
 __author__ = 'Marshall Humble'
 
-INPUT_FILE = 'american-words'
+INPUT_FILE = 'american-words.80'
 
 
 def dollar_words():
