@@ -1,3 +1,3 @@
-# Euler_Groovy
+# Coding Challenges
 
-Python & Groovy Lang Version Of Project Euler
+My Python & Groovy Lang Solutions Of Various Coding Challenges
