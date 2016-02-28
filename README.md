@@ -5,4 +5,5 @@
 
 My Python & Groovy Lang Solutions Of Various Coding Challenges
 
-Currently Pytest is enabled on the CheckIO challenges and that is what TravisCI is reporting on.  
+Currently Pytest is enabled on the CheckIO challenges and the Python version of the Project Euler challenges.  
+CI is being handled by TravisCI.
