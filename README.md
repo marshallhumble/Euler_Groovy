@@ -1,3 +1,3 @@
 # Euler_Groovy
 
-Groovy Lang Version Of Project Euler
+Python & Groovy Lang Version Of Project Euler
