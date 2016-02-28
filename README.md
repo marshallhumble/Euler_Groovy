@@ -4,3 +4,5 @@
 # Coding Challenges
 
 My Python & Groovy Lang Solutions Of Various Coding Challenges
+
+Currently Pytest is enabled on the CheckIO challenges and that is what TravisCI is reporting on.  
