@@ -22,5 +22,5 @@ elapsed = (time.time() - start)
 print("\nThis code took: {} seconds".format(str(elapsed)))
 
 
-def test_function():
-    assert get_sol() == 5537376230
+#def test_function():
+#    assert get_sol() == 5537376230
