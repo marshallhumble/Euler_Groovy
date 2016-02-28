@@ -24,12 +24,10 @@ def find_solution(step):
             return num
     return None
 
-if __name__ == '__main__':
-    solution = find_solution(20)
-    if solution is None:
-        print("No answer found")
-    else:
-        print("found an answer:", solution)
+def test_function():
+    assert find_solution(20) == 232792560
 
-elapsed = (time.time() - start)
-print("This code took: " + str(elapsed) + " seconds")
+
+if __name__ == '__main__':
+    test_function()
+

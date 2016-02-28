@@ -4,9 +4,6 @@
 Find the greatest product of five consecutive digits in the 1000-digit number
 """
 
-import time
-start = time.time()
-
 num = '\
 73167176531330624919225119674426574742355349194934\
 96983520312774506326239578318016984801869478851843\
@@ -33,23 +30,23 @@ biggest = 0
 i = 0
 while i < len(num) - 12:
     one = int(num[i])
-    two = int(num[i+1])
-    thr = int(num[i+2])
-    fou = int(num[i+3])
-    fiv = int(num[i+4])
-    six = int(num[i+5])
-    sev = int(num[i+6])
-    eig = int(num[i+7])
-    nin = int(num[i+8])
-    ten = int(num[i+9])
-    ele = int(num[i+10])
-    twe = int(num[i+11])
-    thi = int(num[i+12])
-    product = one*two*thr*fou*fiv*six*sev*eig*nin*ten*ele*twe*thi
+    two = int(num[i + 1])
+    thr = int(num[i + 2])
+    fou = int(num[i + 3])
+    fiv = int(num[i + 4])
+    six = int(num[i + 5])
+    sev = int(num[i + 6])
+    eig = int(num[i + 7])
+    nin = int(num[i + 8])
+    ten = int(num[i + 9])
+    ele = int(num[i + 10])
+    twe = int(num[i + 11])
+    thi = int(num[i + 12])
+    product = one * two * thr * fou * fiv * six * sev * eig * nin * ten * ele * twe * thi
     if product > biggest:
         biggest = product
     i += 1
-print(biggest)
 
-elapsed = (time.time() - start)
-print("This code took: " + str(elapsed) + " seconds")
+
+def test_function():
+    assert biggest == 23514624000

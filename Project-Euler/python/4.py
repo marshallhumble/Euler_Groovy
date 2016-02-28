@@ -1,9 +1,5 @@
 #!/usr/bin/env python
 
-import time
-start = time.time()
-
-
 """
 Largest palindrome product
 
@@ -15,17 +11,21 @@ Find the largest palindrome made from the product of two 3-digit numbers.
 """
 
 
-results = []
+def run_calc():
+    results = []
 
-for num in range(111,999):
-    for x in range(111,999):
-        c = num * x
-        if str(c) == str(c)[::-1]:
-            results.append(c)
+    for num in range(111, 999):
+        for x in range(111, 999):
+            c = num * x
+            if str(c) == str(c)[::-1]:
+                results.append(c)
 
-print(max(results))
-
-elapsed = (time.time() - start)
-print("This code took: " + str(elapsed) + " seconds")
+    return max(results)
 
 
+def test_function():
+    assert run_calc() == 906609
+
+
+if __name__ == '__main__':
+    test_function()

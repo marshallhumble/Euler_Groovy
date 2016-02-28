@@ -14,7 +14,7 @@ Find the sum of all the primes below two million.
 
 
 def primes_sieve(limit):
-    limitn = limit+1
+    limitn = limit + 1
     primes = dict()
     for i in range(2, limitn):
         primes[i] = True
@@ -25,7 +25,13 @@ def primes_sieve(limit):
             primes[f] = False
     return [i for i in primes if primes[i] == True]
 
+
 print(sum(primes_sieve(2000000)))
 
-elapsed = (time.time() - start)
-print("This code took: " + str(elapsed) + " seconds")
+
+def sum_primes(x):
+    return sum(primes_sieve(x))
+
+
+def test_function():
+    assert sum_primes(2000000) == 142913828922

@@ -1,9 +1,5 @@
 #!/usr/bin/env python
 
-import time
-start = time.time()
-
-
 """
 Sum square difference
 Problem 6
@@ -18,14 +14,22 @@ Hence the difference between the sum of the squares of the first ten natural num
 Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
 """
 
+
 def sum_of_squares(n):
-    return sum([i**2 for i in range(1, n+1)])
+    return sum([i ** 2 for i in range(1, n + 1)])
+
 
 def square_of_sum(n):
-    return sum(range(1, n+1)) ** 2
-
-print(square_of_sum(100) - sum_of_squares(100))
+    return sum(range(1, n + 1)) ** 2
 
 
-elapsed = (time.time() - start)
-print("This code took: " + str(elapsed) + " seconds")
+def run_problem():
+    return square_of_sum(100) - sum_of_squares(100)
+
+
+def test_function():
+    assert run_problem() == 25164150
+
+
+if __name__ == '__main__':
+    test_function()

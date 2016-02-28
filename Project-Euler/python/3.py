@@ -1,7 +1,5 @@
 #!/usr/bin/env python
 
-import time
-start = time.time()
 
 
 """
@@ -19,7 +17,14 @@ def largest_prime(n):
         i += 1
     return n
 
-print(int(largest_prime(600851475143)))
 
-elapsed = (time.time() - start)
-print("This code took: " + str(elapsed) + " seconds")
+def run_calc():
+    return int(largest_prime(600851475143))
+
+
+def test_function():
+    assert run_calc() == 6857
+
+
+if __name__ == '__main__':
+    test_function()

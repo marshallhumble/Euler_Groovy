@@ -2,8 +2,8 @@
 
 from math import sqrt
 import time
-start = time.time()
 
+start = time.time()
 
 """
 10001st prime
@@ -36,10 +36,12 @@ def counter():
             count_prime += 1
             prime = count_token
         count_token += 1
-    print("The 10001'st Prime number is: ", prime)
+    return prime
+
+
+def test_function():
+    assert counter() == 104743
+
 
 if __name__ == '__main__':
-    counter()
-
-    elapsed = (time.time() - start)
-    print("This code took: " + str(elapsed) + " seconds")
+    test_function()
