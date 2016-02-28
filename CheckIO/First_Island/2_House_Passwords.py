@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-import re
+# -*- coding: utf-8 -*-
 
 """
 Stephan and Sophia forget about security and use simple passwords for everything. Help Nikola develop a password
