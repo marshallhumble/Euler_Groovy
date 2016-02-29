@@ -26,8 +26,11 @@ def find_message(text):
     return ret_words
 
 
-if __name__ == '__main__':
-    # These "asserts" using only for self-checking and not necessary for auto-testing
+def test_function():
     assert find_message("How are you? Eh, ok. Low or Lower? Ohhh.") == "HELLO", "hello"
     assert find_message("hello world!") == "", "Nothing"
     assert find_message("HELLO WORLD!!!") == "HELLOWORLD", "Capitals"
+
+
+if __name__ == '__main__':
+    test_function()
