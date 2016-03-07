@@ -14,11 +14,15 @@ Output: The product of the digits as an integer.
 
 from functools import reduce
 
-checkio = lambda number: reduce(lambda res, x: res*x, [int(num) for num in str(number) if int(num)], 1)
+checkio = lambda number: reduce(lambda res, x: res * x, [int(num) for num in str(number) if int(num)], 1)
 
-# These "asserts" using only for self-checking and not necessary for auto-testing
-if __name__ == '__main__':
+
+def test_function():
     assert checkio(123405) == 120
     assert checkio(999) == 729
     assert checkio(1000) == 1
     assert checkio(1111) == 1
+
+
+if __name__ == '__main__':
+    test_function()
