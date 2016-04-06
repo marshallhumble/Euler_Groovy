@@ -6,4 +6,4 @@ python:
 # command to install dependencies
 install: "pip install -r requirements.txt"
 # command to run tests
-script: python -m py.test ./CheckIO/First_Island/*; python -m py.test ./Project-Euler/python/*.py;python -m py.test ./CheckIO/Elementary/*
+script: python -m py.test ./CheckIO/Home/*; python -m py.test ./Project-Euler/python/*.py;python -m py.test ./CheckIO/Elementary/*
