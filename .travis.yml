@@ -5,10 +5,10 @@ python:
   - "3.5"
 # command to install dependencies
 install: "pip install -r requirements.txt"
-pip install pytest-cov
 # command to run tests
 script: python -m py.test --cov=./CheckIO/Home/*; python -m py.test --cov=./Project-Euler/python/*.py;python -m py.test --cov=./CheckIO/Elementary/*
 before_install:
   - pip install codecov
+  - pip install pytest-cov
 after_success:
   - codecov
