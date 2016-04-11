@@ -1,8 +1,6 @@
 
 [![Build Status](https://travis-ci.org/marshallhumble/Coding_Challenges.svg?branch=master)](https://travis-ci.org/marshallhumble/Coding_Challenges) 
 
-[![codecov.io](https://codecov.io/github/marshallhumble/Coding_Challenges/coverage.svg?branch=master)](https://codecov.io/github/marshallhumble/Coding_Challenges?branch=master)
-
 # Coding Challenges
 
 My Python & Groovy Lang Solutions Of Various Coding Challenges
