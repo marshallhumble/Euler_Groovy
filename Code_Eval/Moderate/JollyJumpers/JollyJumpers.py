@@ -35,19 +35,25 @@ Not jolly
 Not jolly
 
 """
-
+import string
 from sys import argv
+
+exclude = set(string.punctuation)
 
 with open(argv[1], 'r') as f:
     test_cases = f.read().strip().splitlines()
 
 
 def check_lines(line):
-    set_list = set(line)
-    lower = int(max(line))
-    upper = int(min(line.replace(' ', '')))
-    #TODO Finish Challenge - range doesn't seem to return a list when called with list(range(lower, upper))
+    lower = max(line)
+    upper = min(line)
+
+    if not list(iter(range(upper, lower + 1, 1))) == list(line):
+        return "Not Jolly"
+    else:
+        return "Jolly"
 
 
 for test in test_cases:
-    print(check_lines(test))
+    values = [int(x) for x in test.replace(' ', '') if x not in exclude]
+    print(check_lines(set(values)))
