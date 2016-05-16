@@ -45,8 +45,9 @@ def most_frequent_days(cyear):
     for elem in most_common:
         if elem[1] == max(count.values()):
             day_list.append(elem[0])
-    # TODO Need to create a sort to return the days in order
-    return reversed(day_list)
+
+    correctly_ordered_list = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+    return sorted(day_list, key=correctly_ordered_list.index)
 
 
 if __name__ == '__main__':
