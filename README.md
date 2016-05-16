@@ -1,5 +1,8 @@
 
-[![Build Status](https://travis-ci.org/marshallhumble/Coding_Challenges.svg?branch=master)](https://travis-ci.org/marshallhumble/Coding_Challenges) ![Coverage Status](https://coveralls.io/repos/github/marshallhumble/Coding_Challenges/badge.svg?branch=master)](https://coveralls.io/github/marshallhumble/Coding_Challenges?branch=master)
+[![Build Status](https://travis-ci.org/marshallhumble/Coding_Challenges.svg?branch=master)](https://travis-ci.org/marshallhumble/Coding_Challenges)
+
+
+[![Coverage Status](https://coveralls.io/repos/github/marshallhumble/Coding_Challenges/badge.svg?branch=master)](https://coveralls.io/github/marshallhumble/Coding_Challenges?branch=master)
 
 # Coding Challenges
 
