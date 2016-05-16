@@ -6,9 +6,11 @@ python:
 # command to install dependencies
 install: "pip install -r requirements.txt"
 # command to run tests
-script: python -m py.test ./CheckIO/Home/*; python -m py.test ./Project-Euler/python/*.py;python -m py.test ./CheckIO/Elementary/*
+script: python -m py.test ./CheckIO/Home/*; python -m py.test ./Project-Euler/python/*.py;python -m py.test ./CheckIO/Elementary/*;python -m py.test ./CheckIO/Home/*; python -m py.test ./Project-Euler/python/*.py;python -m py.test ./CheckIO/Dropbox/*;python -m py.test ./CheckIO/Home/*; python -m py.test ./Project-Euler/python/*.py;python -m py.test ./CheckIO/Home/*;python -m py.test ./CheckIO/Home/*; python -m py.test ./Project-Euler/python/*.py;python -m py.test ./CheckIO/Oreilly/*;python -m py.test ./CheckIO/Home/*; python -m py.test ./Project-Euler/python/*.py;python -m py.test ./CheckIO/Scientific_Expedition/*
 before_install:
   - pip install codecov
-  - pip install pytest-cov
+  - pip install pytest pytest-cov
+  - pip install coveralls
 after_success:
   - codecov
+  - coveralls
