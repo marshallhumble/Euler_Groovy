@@ -13,4 +13,6 @@ before_install:
   - pip install coveralls
 after_success:
   - codecov
-  - coveralls
+  - if [[ $ENV == python=3.5* ]]; then
+          coveralls;
+    fi
