@@ -1,4 +1,4 @@
-heckIO: Scientific Expedition / Verify anagrams
+#!/usr/bin/env python
 
 # An anagram is a type of word play, the result of rearranging the letters of a word or phrase to produce a new word or
 # phrase, using all the original letters exactly once. Two words are anagrams to each other if we can get one from
@@ -16,10 +16,13 @@ def verify_anagrams(first_word, second_word):
     return sorted(first_word.replace(" ", "").lower()) == sorted(second_word.replace(" ", "").lower())
 
 
-if __name__ == '__main__':
+def test_function():
     # These "asserts" using only for self-checking and not necessary for auto-testing
     assert isinstance(verify_anagrams("a", 'z'), bool), "Boolean!"
     assert verify_anagrams("Programming", "Gram Ring Mop") == True, "Gram of code"
     assert verify_anagrams("Hello", "Ole Oh") == False, "Hello! Ole Oh!"
     assert verify_anagrams("Kyoto", "Tokyo") == True, "The global warming crisis of 3002"
 
+
+if __name__ == '__main__':
+    test_function()
