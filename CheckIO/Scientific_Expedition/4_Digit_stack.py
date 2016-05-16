@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 """
 In computer science, a stack is a particular kind of data type or collection in which the principal operations in the
