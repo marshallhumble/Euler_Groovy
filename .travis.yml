@@ -11,4 +11,8 @@ before_install:
   - pip install codecov
   - pip install pytest-cov
 after_success:
-  - codecov
+after_success:
+    - if [[ $ENV == python=3.5* ]]; then
+          coveralls;
+      fi
+
