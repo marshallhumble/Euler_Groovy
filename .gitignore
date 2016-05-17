@@ -1,7 +1,5 @@
 .idea/
-out/
-.cache/
-__pycache__/
+.out/
 *.iml
 
 *.class
