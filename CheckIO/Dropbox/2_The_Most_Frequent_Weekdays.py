@@ -50,7 +50,7 @@ def most_frequent_days(cyear):
     return sorted(day_list, key=correctly_ordered_list.index)
 
 
-if __name__ == '__main__':
+def test_function():
     # These "asserts" using only for self-checking and not necessary for auto-testing
     assert most_frequent_days(2399) == ['Friday'], "1st example"
     assert most_frequent_days(1152) == ['Tuesday', 'Wednesday'], "2nd example"
@@ -60,9 +60,10 @@ if __name__ == '__main__':
     assert most_frequent_days(1084) == ['Tuesday', 'Wednesday']
     assert most_frequent_days(1216) == ['Friday', 'Saturday']
     assert most_frequent_days(212) == ['Wednesday', 'Thursday']
+    assert most_frequent_days(1216) == ['Friday', 'Saturday']
+    assert most_frequent_days(1492) == ['Friday', 'Saturday']
 
-# {'input': 1216, 'answer': ['Friday', 'Saturday']},
-# {'input': 1492, 'answer': ['Friday', 'Saturday']},
+
 # {'input': 1770, 'answer': ['Monday']},
 # {'input': 1785, 'answer': ['Saturday']},
 # {'input': 1, 'answer': ['Monday']},
@@ -83,3 +84,6 @@ if __name__ == '__main__':
 # {'input': 8116, 'answer': ['Wednesday', 'Thursday']},
 # {'input': 9137, 'answer': ['Friday']},
 # {'input': 1794, 'answer': ['Wednesday']},
+
+if __name__ == '__main__':
+    test_function()
