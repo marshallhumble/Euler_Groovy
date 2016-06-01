@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+# -*- coding: utf-8 -*-
+
 """
 For language training our Robots want to learn about suffixes.
 
