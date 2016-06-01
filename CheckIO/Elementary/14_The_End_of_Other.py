@@ -22,9 +22,6 @@ checkio({"one"}) == False
 checkio({"helicopter", "li", "he"}) == False
 
 How it is used: Here you can learn about iterating through set type and string data type functions.
-
-Precondition: 2 ≤ len(words) < 30
-all(re.match(r"\A[a-z]{1,99}\Z", w) for w in words)
 """
 
 
